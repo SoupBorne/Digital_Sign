@@ -8,16 +8,16 @@
 pick=$1
 
 if [ $pick  == "OUT" ]; then
-	nsxiv -f -sF /home/leeann-sign/Downloads/'Out of office.jpg'
+	nsxiv -f -sF /home/"Your username here"/Downloads/'Out of office.jpg'
 
 elif [ $pick  == "OPEN" ]; then
-        nsxiv -f -sF /home/leeann-sign/Downloads/Available.jpg
+        nsxiv -f -sF /home/"Your username here"/Downloads/Available.jpg
 
 elif [ $pick  == "LUNCH" ]; then
-        nsxiv -f -sF /home/leeann-sign/Downloads/Lunch.jpg
+        nsxiv -f -sF /home/"Your username here"/Downloads/Lunch.jpg
 
 elif [[ $pick  == "MEETING" ]]; then
-        nsxiv -f -sF /home/leeann-sign/Downloads/'In meeting.jpg'
+        nsxiv -f -sF /home/"your username here"/Downloads/'In meeting.jpg'
 
 else 
 	echo "Invalid Input"
