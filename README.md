@@ -41,3 +41,31 @@ The bash script is responsible for displaying the correct status image based on 
   - **`-sF`**: The image is scaled to fit the screen.
 
 The bash script controls which image to display based on the user’s input, and `nsxiv` is the tool that actually handles the rendering of the image on the Raspberry Pi’s connected display.
+
+
+
+
+## Python Script: Remote Access via SSH
+
+This Python script allows you to remotely control the digital sign by connecting to the Raspberry Pi over SSH and executing the bash script. The script uses the `paramiko` library to manage the SSH connection.
+
+### How the Script Works:
+1. **User Input**: Prompts the user to choose a status for the sign (e.g., OUT, OPEN, LUNCH, MEETING).
+2. **SSH Connection**: Establishes an SSH connection to the Raspberry Pi using `paramiko`.
+3. **Remote Execution**: Runs the bash script on the Raspberry Pi to change the displayed image based on the user's input.
+4. **Error Handling**: Includes basic error handling for invalid inputs or connection issues.
+
+---
+
+### What to Put in `hostname`, `username`, and `password`
+
+- **`hostname`**: This is the IP address of your Raspberry Pi. You can find the Raspberry Pi's IP address by running the following command on the Pi:
+  ```bash
+  hostname -I
+  ```
+
+  Use the IP address you get from this command in the script.
+
+- **`username`**: This is the username for your Raspberry Pi. The default username for Raspberry Pi OS is usually pi, unless you’ve changed it. If you've created a custom user during setup, use that instead.
+
+- **`password`**: This is the password for the user specified in username. If you’re using the default user pi, the default password is usually raspberry (unless you've changed it for security reasons). Always ensure you use the correct password for your user account.
