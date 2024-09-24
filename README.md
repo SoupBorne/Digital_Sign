@@ -1,4 +1,3 @@
-# Digital_Sign
 # Raspberry Pi Digital Sign
 
 This project allows you to create a digital sign using a Raspberry Pi. The sign can display different statuses such as "Out of Office", "Open", "Lunch", or "In a Meeting". The display is controlled via a simple script and can be accessed remotely using SSH.
