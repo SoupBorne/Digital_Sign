@@ -1,0 +1,25 @@
+
+
+#!/bin/bash
+###########################
+#Script: Digital Sign 
+###########################
+
+pick=$1
+
+if [ $pick  == "OUT" ]; then
+	nsxiv -f -sF /home/leeann-sign/Downloads/'Out of office.jpg'
+
+elif [ $pick  == "OPEN" ]; then
+        nsxiv -f -sF /home/leeann-sign/Downloads/Available.jpg
+
+elif [ $pick  == "LUNCH" ]; then
+        nsxiv -f -sF /home/leeann-sign/Downloads/Lunch.jpg
+
+elif [[ $pick  == "MEETING" ]]; then
+        nsxiv -f -sF /home/leeann-sign/Downloads/'In meeting.jpg'
+
+else 
+	echo "Invalid Input"
+
+fi
