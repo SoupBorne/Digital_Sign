@@ -85,7 +85,7 @@ When the Raspberry Pi is powered on, it will automatically boot from the SD card
 
 After completing the setup, you’ll be taken to the Raspberry Pi OS desktop.
 
-## Step 6: (Optional) Enabling SSH for Remote Access
+## Step 6: Enabling SSH for Remote Access
 
 If you want to control your Raspberry Pi remotely (without a monitor or keyboard attached), you’ll need to enable SSH (Secure Shell).
 
