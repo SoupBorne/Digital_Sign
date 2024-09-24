@@ -23,5 +23,5 @@ This project allows you to create a digital sign using a Raspberry Pi. The sign 
 This project uses a bash script on the Raspberry Pi to display images, and a Python script to control the sign remotely via SSH.
 
 ### Script Overview
-1. **`sign.sh`**: A bash script that takes an argument (`OUT`, `OPEN`, `LUNCH`, or `MEETING`) and displays a corresponding image using the `nsxiv` image viewer.
+1. **`Bash Image Selection`**: A bash script that takes an argument (`OUT`, `OPEN`, `LUNCH`, or `MEETING`) and displays a corresponding image using the `nsxiv` image viewer.
 2. **`sign_control.py`**: A Python script that connects to the Raspberry Pi over SSH and runs the bash script to change the displayed image.
