@@ -24,4 +24,4 @@ This project uses a bash script on the Raspberry Pi to display images, and a Pyt
 
 ### Script Overview
 1. **`Bash Image Selection`**: A bash script that takes an argument (`OUT`, `OPEN`, `LUNCH`, or `MEETING`) and displays a corresponding image using the `nsxiv` image viewer.
-2. **`sign_control.py`**: A Python script that connects to the Raspberry Pi over SSH and runs the bash script to change the displayed image.
+2. **`Python Remote Access `**: A Python script that connects to the Raspberry Pi over SSH and runs the bash script to change the displayed image.
